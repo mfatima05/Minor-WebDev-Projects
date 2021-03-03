@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="/survey.css" />
+  </head>
+  <body>
+    <div style="text-align: center" class="title_desc">
+      <h1 id="title">Survey Form</h1>
+      <p style="text-align: center" id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </div>
+    <div class="main">
+      <div id="survey-form-div">
+        <form action="" id="survey-form">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+          <label id="number-label" for="age">Age(optional)</label>
+          <input
+            type="number"
+            id="number"
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+          <label id="dropdown-label" for="">Gender</label>
+          <select id="dropdown">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+          </select>
+          <p>Would like to share this surveys to your friends?</p>
+          <label style="padding-top: 0px" id="radio-label" for=""
+            ><input
+              type="radio"
+              name="user-recommend"
+              value="definitely"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label style="padding-top: 0px" id="radio-label" for=""
+            ><input
+              type="radio"
+              name="user-recommend"
+              value="maybe"
+              class="input-radio"
+            />Maybe</label
+          >
+          <label style="padding-top: 0px" id="radio-label" for=""
+            ><input
+              type="radio"
+              name="user-recommend"
+              value="not-sure"
+              class="input-radio"
+            />Nope</label
+          >
+          <p>Your favourite social media platform?</p>
+          <select id="dropdown-1">
+            <option>Instagram</option>
+            <option>Facebook</option>
+            <option>Linkedin</option>
+            <option>Snapchat</option>
+          </select>
+          <p>
+            Your favourite websites for learning programming? (Check all that
+            apply)
+          </p>
+          <label style="padding-top: 0px" for="" id="checkbox-label"
+            ><input
+              type="checkbox"
+              name="prefer"
+              value="FCC.org"
+              type="checkbox"
+              class="input-checkbox"
+            />FCC.org</label
+          >
+          <label style="padding-top: 0px" for="" id="checkbox-label"
+            ><input
+              name="prefer"
+              value="codewars"
+              type="checkbox"
+              class="input-checkbox"
+            />codewars</label
+          >
+          <label style="padding-top: 0px" for="" id="checkbox-label"
+            ><input
+              name="prefer"
+              value="Tutorials Point"
+              type="checkbox"
+              class="input-checkbox"
+              style="padding-right: 400px"
+            />Tutorials Point</label
+          >
+          <label style="padding-top: 0px" for="" id="checkbox-label"
+            ><input
+              name="prefer"
+              value="Coursera"
+              type="checkbox"
+              class="input-checkbox"
+              style="padding-right: 400px"
+            />Coursera</label
+          >
+          <label style="padding-top: 0px" for="" id="checkbox-label"
+            ><input
+              name="prefer"
+              value="edx"
+              type="checkbox"
+              class="input-checkbox"
+              style="padding-right: 400px"
+            />edx</label
+          >
+          <label style="padding-top: 0px" for="" id="checkbox-label"
+            ><input
+              name="prefer"
+              value="udemy"
+              type="checkbox"
+              class="input-checkbox"
+              style="padding-right: 400px"
+            />udemy</label
+          >
+          <p>>Any comments or suggestions?</p>
+          <textarea placeholder="Enter your comments here..."></textarea>
+          <button id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

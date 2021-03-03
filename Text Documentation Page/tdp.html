@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentayion Page</title>
+    <link rel="stylesheet" href="/tdp.css" />
+    <script
+      src="https://kit.fontawesome.com/ede2b9126d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <header>Data Science</header>
+      <ul class="navbar-list">
+      <li><a href="#introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#installation_of_numpy" class="nav-link">Installation of Numpy</a></li>
+      <li><a href="#import_numpy" class="nav-link">Import numpy</a></li>
+      <li><a href="#creating_array_object" class="nav-link">Creating array object</a></li>
+      <li><a href="#data_type_in_numpy" class="nav-link">Data types in numpy</a></li>
+      <li><a href="#shape_of_array" class="nav-link">Shape of array</a></li>
+    </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+        <p>
+          Data is the new Oil. This statement shows how every modern IT system
+          is driven by capturing, storing and analysing data for various needs.
+          Be it about making decision for business, forecasting weather,
+          studying protein structures in biology or designing a marketing
+          campaign.</p>
+          <p>All of these scenarios involve a multidisciplinary approach
+          of using mathematical models, statistics, graphs, databases and of
+          course the business or scientific logic behind the data analysis. So
+          we need a programming language which can cater to all thesrse
+          needs of data science.
+        </p>
+      </section>
+
+      <section id="installation_of_numpy" class="main-section">
+        <header>Installation of Numpy</header>
+        <p>
+          If you have Python and PIP already installed on a system, then
+          installation of NumPy is very easy. Install it using this command:
+          <code class="black">C:\Users\Your Name>pip install numpy</code>
+        </p>
+      </section>
+
+      <section id="import_numpy" class="main-section">
+        <header>Import numpy</header>
+        <p>
+          Once NumPy is installed, import it in your applications by adding the
+          import keyword:<code class="white">import numpy</code>
+          Now NumPy is imported and ready to use.</p>
+          <p><code class="white">import numpy arr = numpy.array([1, 2, 3, 4, 5]) print(arr) </code
+          >NumPy is usually imported under the np alias.
+          <code class="white">import numpy as np</code>
+        </p>
+      </section>
+
+      <section id="creating_array_object" class="main-section">
+        <header>Creating array object</header>
+        <p>
+          NumPy is used to work with arrays. The array object in NumPy is called
+          ndarray. We can create a NumPy ndarray object by using the array()
+          function.</p>
+          <p><code class="white">import numpy as np arr = np.array([1, 2, 3, 4, 5]) print(arr)
+            print(type(arr))</code
+          >To create an ndarray, we can pass a list, tuple or any array-like
+          object into the array() method, and it will be converted into an
+          ndarray:
+          <code class="white"
+            >import numpy as np arr = np.array((1, 2, 3, 4, 5)) print(arr)</code
+          >
+        </p>
+      </section>
+
+      <section id="data_type_in_numpy" class="main-section">
+        <header>Data types in numpy</header>
+        <p>NumPy has some extra data types, and refer to data types with one character, like i for integers, u for unsigned
+        integers etc.</p>
+        <p>
+        Below is a list of all data types in NumPy and the characters used to represent them.
+      <ul class="list-1">
+        <li><span class="list1-span">i</span> - integer</li>
+        <li><span class="list1-span">b</span> - boolean</li>
+        <li><span class="list1-span">u</span> - unsigned integer</li>
+        <li><span class="list1-span">f</span> - float</li>
+        <li><span class="list1-span">c</span> - complex float</li>
+        <li><span class="list1-span">m</span> - timedelta</li>
+        <li><span class="list1-span">M</span> - datetime</li>
+        <li><span class="list1-span">O</span> - object</li>
+        <li><span class="list1-span">S</span> - string</li>
+        <li><span class="list1-span">U</span> - unicode string</li>
+        <li><span class="list1-span">V</span> - fixed chunk of memory for other type ( void )</li>
+      </ul></p>
+      </section>
+
+      <section id="shape_of_array" class="main-section">
+        <header>Shape of array</header>
+        <p>The shape of an array is the number of elements in each dimension.NumPy arrays have an attribute called <span class="list1-span">shape</span> that returns a tuple with each index having the number of corresponding elements.</p>
+        <p>
+        <code class="white">import numpy as np
+        arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+        print(arr.shape)</code></p>
+      </section>
+      
+    </main>
+  </body>
+</html>
